@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<resources>
+
+    <string-array name="tipo_movi">
+        <item>--opciones--</item>
+        <item>ingreso</item>
+        <item>gasto</item>
+    </string-array>
+
+
+</resources>

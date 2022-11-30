@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MovimientActivity">
+
+    <Spinner
+        android:id="@+id/spTipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etMotivo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="motivo"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/spTipo"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etMonto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Monto"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMotivo" />
+
+    <EditText
+        android:id="@+id/etLatitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="latitud"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/etMonto"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etLongitud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Longitud"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/etLatitud"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <EditText
+        android:id="@+id/etUrl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/etLongitud"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Button
+        android:id="@+id/btnFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomar foto"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.42"
+        app:layout_constraintStart_toEndOf="@+id/etLongitud"
+        app:layout_constraintTop_toBottomOf="@+id/btnGuardarMovi"
+        app:layout_constraintVertical_bias="0.142" />
+
+    <Button
+        android:id="@+id/btnGuardarMovi"
+        android:layout_width="175dp"
+        android:layout_height="73dp"
+        android:layout_marginTop="60dp"
+        android:text="GuardarMovimiento"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.384"
+        app:layout_constraintStart_toEndOf="@+id/etMonto"
+        app:layout_constraintTop_toBottomOf="@+id/spTipo" />
+
+    <ImageView
+        android:id="@+id/imgFoto"
+        android:layout_width="160dp"
+        android:layout_height="179dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etUrl"
+        app:layout_constraintVertical_bias="0.498"
+        tools:srcCompat="@tools:sample/avatars" />
+</androidx.constraintlayout.widget.ConstraintLayout>
